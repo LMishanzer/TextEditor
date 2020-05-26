@@ -2,7 +2,7 @@
 
 namespace TextEditorBussLog
 {
-    public class Class1
+    public class Model
     {
     }
 }
