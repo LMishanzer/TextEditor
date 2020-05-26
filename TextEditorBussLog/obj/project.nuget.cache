@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ql6ib8Haklj/ajX2AI7//LyZOvYNhk+7oePMLQgIhnGy/3AJxQoN+hLlR8ApMJqMI3YK1egrGmQaVKZolSyCZA==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\TextEditor\\TextEditorBussLog\\TextEditorBussLog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mike\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Mike\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

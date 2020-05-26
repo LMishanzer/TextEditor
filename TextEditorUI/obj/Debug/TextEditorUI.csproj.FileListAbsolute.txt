@@ -1,0 +1,10 @@
+D:\Projects\TextEditor\TextEditorUI\bin\Debug\TextEditorUI.exe.config
+D:\Projects\TextEditor\TextEditorUI\bin\Debug\TextEditorUI.exe
+D:\Projects\TextEditor\TextEditorUI\bin\Debug\TextEditorUI.pdb
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.csprojAssemblyReference.cache
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.Properties.Resources.resources
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.csproj.GenerateResource.cache
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.csproj.CoreCompileInputs.cache
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.exe
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.pdb
+D:\Projects\TextEditor\TextEditorUI\obj\Debug\TextEditorUI.EditorForm.resources
