@@ -1,0 +1,9 @@
+D:\Projects\TextEditor\TextEditorBussLog\bin\Release\netstandard2.0\TextEditorBussLog.deps.json
+D:\Projects\TextEditor\TextEditorBussLog\bin\Release\netstandard2.0\TextEditorBussLog.dll
+D:\Projects\TextEditor\TextEditorBussLog\bin\Release\netstandard2.0\TextEditorBussLog.pdb
+D:\Projects\TextEditor\TextEditorBussLog\obj\Release\netstandard2.0\TextEditorBussLog.csprojAssemblyReference.cache
+D:\Projects\TextEditor\TextEditorBussLog\obj\Release\netstandard2.0\TextEditorBussLog.AssemblyInfoInputs.cache
+D:\Projects\TextEditor\TextEditorBussLog\obj\Release\netstandard2.0\TextEditorBussLog.AssemblyInfo.cs
+D:\Projects\TextEditor\TextEditorBussLog\obj\Release\netstandard2.0\TextEditorBussLog.csproj.CoreCompileInputs.cache
+D:\Projects\TextEditor\TextEditorBussLog\obj\Release\netstandard2.0\TextEditorBussLog.dll
+D:\Projects\TextEditor\TextEditorBussLog\obj\Release\netstandard2.0\TextEditorBussLog.pdb

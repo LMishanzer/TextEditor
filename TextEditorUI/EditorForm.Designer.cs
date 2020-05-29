@@ -33,16 +33,16 @@
             this.editFile = new System.Windows.Forms.ToolStripMenuItem();
             this.fileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.editFont = new System.Windows.Forms.ToolStripMenuItem();
             this.fontStyle = new System.Windows.Forms.ToolStripMenuItem();
             this.fontSize = new System.Windows.Forms.ToolStripMenuItem();
+            this.biggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.smallerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textField = new System.Windows.Forms.TextBox();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.charCountText = new System.Windows.Forms.ToolStripStatusLabel();
             this.charCount = new System.Windows.Forms.ToolStripStatusLabel();
-            this.biggerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.smallerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.editFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileOpen,
             this.fileSave,
-            this.saveAsToolStripMenuItem});
+            this.fileSaveAs});
             this.editFile.Name = "editFile";
             this.editFile.Size = new System.Drawing.Size(46, 24);
             this.editFile.Text = "File";
@@ -83,6 +83,12 @@
             this.fileSave.Size = new System.Drawing.Size(224, 26);
             this.fileSave.Text = "Save";
             // 
+            // fileSaveAs
+            // 
+            this.fileSaveAs.Name = "fileSaveAs";
+            this.fileSaveAs.Size = new System.Drawing.Size(224, 26);
+            this.fileSaveAs.Text = "Save as...";
+            // 
             // editFont
             // 
             this.editFont.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -95,7 +101,7 @@
             // fontStyle
             // 
             this.fontStyle.Name = "fontStyle";
-            this.fontStyle.Size = new System.Drawing.Size(224, 26);
+            this.fontStyle.Size = new System.Drawing.Size(124, 26);
             this.fontStyle.Text = "Style";
             // 
             // fontSize
@@ -104,8 +110,20 @@
             this.biggerToolStripMenuItem,
             this.smallerToolStripMenuItem});
             this.fontSize.Name = "fontSize";
-            this.fontSize.Size = new System.Drawing.Size(224, 26);
+            this.fontSize.Size = new System.Drawing.Size(124, 26);
             this.fontSize.Text = "Size";
+            // 
+            // biggerToolStripMenuItem
+            // 
+            this.biggerToolStripMenuItem.Name = "biggerToolStripMenuItem";
+            this.biggerToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.biggerToolStripMenuItem.Text = "Bigger";
+            // 
+            // smallerToolStripMenuItem
+            // 
+            this.smallerToolStripMenuItem.Name = "smallerToolStripMenuItem";
+            this.smallerToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
+            this.smallerToolStripMenuItem.Text = "Smaller";
             // 
             // textField
             // 
@@ -118,12 +136,6 @@
             this.textField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textField.Size = new System.Drawing.Size(781, 503);
             this.textField.TabIndex = 1;
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.saveAsToolStripMenuItem.Text = "Save as...";
             // 
             // statusStrip
             // 
@@ -146,20 +158,7 @@
             // charCount
             // 
             this.charCount.Name = "charCount";
-            this.charCount.Size = new System.Drawing.Size(17, 20);
-            this.charCount.Text = "0";
-            // 
-            // biggerToolStripMenuItem
-            // 
-            this.biggerToolStripMenuItem.Name = "biggerToolStripMenuItem";
-            this.biggerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.biggerToolStripMenuItem.Text = "Bigger";
-            // 
-            // smallerToolStripMenuItem
-            // 
-            this.smallerToolStripMenuItem.Name = "smallerToolStripMenuItem";
-            this.smallerToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.smallerToolStripMenuItem.Text = "Smaller";
+            this.charCount.Size = new System.Drawing.Size(0, 20);
             // 
             // EditorForm
             // 
@@ -192,7 +191,7 @@
         private System.Windows.Forms.ToolStripMenuItem fontStyle;
         private System.Windows.Forms.ToolStripMenuItem fontSize;
         private System.Windows.Forms.TextBox textField;
-        private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fileSaveAs;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel charCountText;
         private System.Windows.Forms.ToolStripStatusLabel charCount;

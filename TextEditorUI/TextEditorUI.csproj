@@ -52,6 +52,8 @@
     <Compile Include="EditorForm.Designer.cs">
       <DependentUpon>EditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainPresenter.cs" />
+    <Compile Include="MessageService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EditorForm.resx">
@@ -81,6 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\pencilcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextEditorBussLog\TextEditorBussLog.csproj">
+      <Project>{68f33e9b-702c-4487-abbc-210731d265eb}</Project>
+      <Name>TextEditorBussLog</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

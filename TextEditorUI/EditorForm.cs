@@ -10,23 +10,75 @@ using System.Windows.Forms;
 
 namespace TextEditorUI
 {
-    public interface IMainForm
+    public interface IEditorForm
     {
         string filePath { get; set; }
         string content { get; set; }
         void SetCharactersCount(int count);
         event EventHandler FileOpenClick;
         event EventHandler FileSaveClick;
-        event EventHandler FileSaveAsClick;
+        event EventHandler ContentChanged;
     }
 
-    public partial class EditorForm : Form, IMainForm
+    public partial class EditorForm : Form, IEditorForm
     {
         public EditorForm()
         {
             InitializeComponent();
+
+            fileOpen.Click += fileOpen_Click;
+            fileSave.Click += FileSave_Click;
+            fileSaveAs.Click += FileSaveAs_Click;
+            textField.TextChanged += TextField_TextChanged;
         }
 
+        #region EventsUsing
+        private void TextField_TextChanged(object sender, EventArgs e)
+        {
+            if (ContentChanged != null)
+                ContentChanged(sender, e);
+        }
+
+        private void FileSaveAs_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog fileDialog = new SaveFileDialog();
+            fileDialog.Filter = "Text file|*.txt";
+            fileDialog.DefaultExt = "txt";
+
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                filePath = fileDialog.FileName;
+
+                if (FileSaveClick != null)
+                    FileSaveClick(sender, e);
+            }
+        }
+
+        private void FileSave_Click(object sender, EventArgs e)
+        {
+            if (filePath == null)
+            {
+                FileSaveAs_Click(sender, e);
+            }
+            else if (FileSaveClick != null)
+                FileSaveClick(sender, e);
+        }
+
+        void fileOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "All|*.*|Text files|*.txt";
+            
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                filePath = fileDialog.FileName;
+                if (FileOpenClick != null)
+                    FileOpenClick(sender, e);
+            }
+        }
+        #endregion
+
+        #region IEditorForm
         public string filePath { get; set; }
         public string content 
         { 
@@ -36,7 +88,7 @@ namespace TextEditorUI
             }
             set
             {
-                content = value;
+                textField.Text = value;
             }
         }
 
@@ -47,6 +99,9 @@ namespace TextEditorUI
 
         public event EventHandler FileOpenClick;
         public event EventHandler FileSaveClick;
-        public event EventHandler FileSaveAsClick;
+        public event EventHandler ContentChanged;
+        #endregion
+
+
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TextEditorBussLog;
 
 namespace TextEditorUI
 {
@@ -16,7 +17,14 @@ namespace TextEditorUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EditorForm());
+
+            EditorForm mainEditor = new EditorForm();
+            FileManager manager = new FileManager();
+            MessageService messageService = new MessageService();
+            MainPresenter mainPresenter = new MainPresenter(manager, mainEditor,
+                messageService);
+
+            Application.Run(mainEditor);
         }
     }
 }
